@@ -15,7 +15,7 @@ app.use("/api/applications", applicationRoutes); //Mounting Application Routes i
 app.get("/", (req,res) => {
     res.status(200).json(
         {   
-            sample_endpoint: /api/jobs,
+            sample_endpoint: "/api/jobs",
             message:"For other endpoints, view on github"}
     );
 });
