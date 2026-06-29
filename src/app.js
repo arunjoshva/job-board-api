@@ -13,8 +13,10 @@ app.use("/api/jobs", jobRoutes); //Mountin Job Routes in app.js
 app.use("/api/applications", applicationRoutes); //Mounting Application Routes in app.js
 
 app.get("/", (req,res) => {
-    res.json(
-        {message:"Job Board API Running"}
+    res.status(200).json(
+        {   
+            sample_endpoint: /api/jobs,
+            message:"For other endpoints, view on github"}
     );
 });
 
